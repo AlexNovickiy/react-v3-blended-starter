@@ -34,6 +34,7 @@ export default function PostsClient({ initialData, userId }: PostsClientProps) {
         ...(userId !== 'All' && { userId }),
       }),
     placeholderData: keepPreviousData,
+    refetchOnMount: false,
     initialData,
   });
 
